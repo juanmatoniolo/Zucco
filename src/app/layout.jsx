@@ -10,6 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="apple-mobile-web-app-title" content="Estudio Juridico Zucco " />
+      <link rel="manifest" href="https://progressier.app/o9Er45GhmL1uxZfaGe2V/progressier.json"/><script defer src="https://progressier.app/o9Er45GhmL1uxZfaGe2V/script.js"></script> 
       <body className="">
         {children}
       </body>
