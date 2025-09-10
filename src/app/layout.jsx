@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import App from "next/app";
-import App from "./app";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -12,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <meta name="apple-mobile-web-app-title" content="Estudio Juridico Zucco " />
-      <link rel="manifest" href="https://progressier.app/o9Er45GhmL1uxZfaGe2V/progressier.json" /><script defer src="https://progressier.app/o9Er45GhmL1uxZfaGe2V/script.js"></script>
+      <link rel="manifest" href="https://progressier.app/o9Er45GhmL1uxZfaGe2V/progressier.json"/><script defer src="https://progressier.app/o9Er45GhmL1uxZfaGe2V/script.js"></script> 
       <body className="">
-        <App>{children}</App>
+        {children}
       </body>
     </html>
   );
