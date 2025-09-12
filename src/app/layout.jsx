@@ -9,11 +9,11 @@ export const metadata = {
   themeColor: "#609162",
   icons: {
     icon: [
-      { url: "/favicon.ico/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
-      { url: "/favicon.ico/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
-      { url: "/favicon.ico/web-app-manifest-192x192.png" },
+      { url: "web-app-manifest-192x192.png" },
     ],
   },
   manifest: "/manifest.json",
