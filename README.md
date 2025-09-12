@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+paleta de color:
+#609162
 
-## Getting Started
 
-First, run the development server:
+/***********************************************************************/
+2. Palabras clave y frases populares (y long tail)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Estas son algunas ideas de palabras clave que podrían tener buen volumen, basadas en lo que la gente pregunta:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Asesoría legal / abogado gratuito
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Abogado laboral Buenos Aires / abogado laboral en [tu ciudad]
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Derecho de familia abogados divorcio
 
-## Learn More
+Cómo hacer divorcio amistoso / divorcio online
 
-To learn more about Next.js, take a look at the following resources:
+Herencia y sucesión consulta legal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Despido injustificado ¿qué hacer?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contrato de alquiler derechos y obligaciones
 
-## Deploy on Vercel
+Violencia de género asesoría legal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Seguro social / jubilación asesoramiento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Abogado penal / causas criminales
+
+Cómo presentar demanda civil / demanda por incumplimiento
+
+Long-tail (más específicas):
+
+“¿Cuánto cuesta un abogado laboral por despido?”
+
+“Requisitos para divorciarse de mutuo acuerdo en [Provincia]”
+
+“Consultas legales gratuitas en Córdoba / Buenos Aires”
+
+“Cómo reclamar seguridad social si me rechazan prestación”
+
+“Qué hacer si me negaron palabra autorización de custodia”
+
+
+
+Entre Rios : 
+
+Tema / Especialidad	Palabras clave sugeridas
+Derecho laboral	“Abogado laboral Entre Ríos”, “asesoría legal despido Entre Ríos”, “qué hacer si me despiden sin causa ER”, “reclamación indemnización ER provincia”
+Derecho de familia	“Divorcio Entre Ríos”, “abogado divorcio de mutuo acuerdo ER”, “custodia hijos Entre Ríos”, “pensiones alimenticias Entre Ríos”
+Sucesiones y herencias	“herencia Entre Ríos trámite legal”, “abogado sucesorio ER”, “cómo hacer sucesión Entre Ríos”
+Derecho civil / contratos	“contratos alquiler Entre Ríos derechos locatarios”, “redacción de contratos ER”, “responsabilidad civil Entre Ríos”
+Violencia de género / familia	“violencia de género asesoría legal Entre Ríos”, “denuncia por violencia doméstica ER”, “abogada derechos mujer Entre Ríos”
+Seguridad Social / Jubilaciones	“jubilación tardía Entre Ríos”, “cómo tramitar jubilación ER”, “rechazo prestación seguridad social Entre Ríos”
+Derecho penal	“abogado penal ER”, “defensa penal Entre Ríos”, “delitos comunes asesoría ER”
+Derecho inmobiliario / arrendamientos	“abogado inmobiliario Entre Ríos”, “alquileres derechos obligaciones ER”, “desalojo Entre Ríos”
+Servicios gratuitos / bajo costo	“asesoría legal gratuita Entre Ríos”, “centros de acceso a la justicia ER”, “abogado defensor público Entre Ríos”, “organismos estatales asesoría legal ER”
+
+Tema / Especialidad	Palabras clave sugeridas
+General / local	“abogados en Chajarí”, “asesoría legal Chajarí”, “estudio jurídico Chajarí Entre Ríos”
+Derecho laboral	“despido Chajarí”, “abogado laboral Chajarí”, “indemnización laboral Chajarí”
+Familia / divorcio	“divorcio Chajarí”, “custodia hijos Chajarí”, “asesoría familia Chajarí”
+Sucesiones / herencias	“sucesión Chajarí”, “herencia Chajarí trámite”, “abogado sucesorio Chajarí”
+Alquileres / inmuebles	“alquileres Chajarí derechos”, “contrato de alquiler Chajarí”, “desalojo Chajarí”
+Violencia de género / protección	“violencia de género Chajarí asesoría”, “denuncia doméstica Chajarí”, “abogado mujer Chajarí”
+Servicios públicos gratuitos	“asesoría legal gratuita Chajarí”, “defensor público Chajarí”, “CAJ Chajarí” (Centro de Acceso a la Justicia)
+Seguridad social / pensiones	“jubilación Chajarí”, “pensión alimenticia Chajarí”, “prestaciones seguridad social Chajarí”
+Derecho penal / contravenciones	“abogado penal Chajarí”, “delitos menores Chajarí”, “defensa penal Chajarí”
