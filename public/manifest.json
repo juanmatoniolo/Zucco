@@ -1,21 +1,35 @@
 {
-  "name": "Estudio Juridico Zucco ",
-  "short_name": "Estudio Juridico Zucco ",
-  "icons": [
-    {
-      "src": "/web-app-manifest-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/web-app-manifest-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-  "theme_color": "#609162",
-  "background_color": "#609162",
-  "display": "standalone"
+	"name": "Estudio Jurídico Zucco",
+	"short_name": "Zucco Jurídico",
+	"description": "Estudio Jurídico en Chajarí – Entre Ríos. Especialistas en daños y perjuicios, sucesiones, amparos de salud, derecho laboral, accidentes de trabajo, enfermedades profesionales y ciudadanías argentinas.",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#609162",
+	"theme_color": "#609162",
+	"icons": [
+		{
+			"src": "/logo-blanco.webp",
+			"sizes": "192x192",
+			"type": "image/webp",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/logo-blanco.webp",
+			"sizes": "512x512",
+			"type": "image/webp",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/logo-blanco.webp",
+			"sizes": "1024x1024",
+			"type": "image/webp",
+			"purpose": "any maskable"
+		}
+	],
+	"prefer_related_applications": false,
+	"id": "com.estudiojuridico.zucco",
+	"lang": "es-AR",
+	"categories": ["legal", "lawyer", "services"]
 }
