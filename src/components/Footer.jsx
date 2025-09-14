@@ -3,7 +3,14 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import { Montserrat } from "next/font/google";
-import { FaWhatsapp, FaTelegramPlane, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+    FaWhatsapp,
+    FaTelegramPlane,
+    FaLinkedin,
+    FaInstagram,
+    FaMapMarkerAlt,
+    FaEnvelope,
+} from "react-icons/fa";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -13,8 +20,9 @@ const montserrat = Montserrat({
 export default function Footer() {
     return (
         <footer className={`${styles.footer} text-white`}>
-            <div className={`container d-flex flex-column flex-md-row justify-content-between align-items-center ${montserrat.className}`}>
-
+            <div
+                className={`container d-flex flex-column flex-md-row justify-content-between align-items-center ${montserrat.className}`}
+            >
                 {/* Logo + Nombre */}
                 <div className="d-flex align-items-center mb-3 mb-md-0">
                     <img
@@ -26,7 +34,7 @@ export default function Footer() {
                 </div>
 
                 {/* Redes sociales */}
-                <div className="d-flex gap-3">
+                <div className="d-flex gap-3 flex-wrap justify-content-center">
                     <Link
                         href="https://wa.me/5493456510725"
                         target="_blank"
@@ -36,7 +44,7 @@ export default function Footer() {
                         <FaWhatsapp />
                     </Link>
                     <Link
-                        href="https://t.me/5493456510725"
+                        href="https://t.me/+543456510725"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.socialLink}
@@ -59,12 +67,29 @@ export default function Footer() {
                     >
                         <FaInstagram />
                     </Link>
+                    <Link
+                        href="https://maps.app.goo.gl/TWCx1Zp9iPAMTGjN8?g_st=iw"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.socialLink}
+                    >
+                        <FaMapMarkerAlt />
+                    </Link>
+                    <Link
+                        href="mailto:zuccojuancruz@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.socialLink}
+                    >
+                        <FaEnvelope />
+                    </Link>
                 </div>
             </div>
 
             {/* Copy */}
             <div className="text-center mt-3 small">
-                © {new Date().getFullYear()} Estudio Jurídico Juan C. Zucco. Todos los derechos reservados.
+                © {new Date().getFullYear()} Estudio Jurídico Juan C. Zucco. Todos los
+                derechos reservados.
             </div>
         </footer>
     );
