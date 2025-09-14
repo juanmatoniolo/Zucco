@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
         {/* Favicon / íconos */}
         <link rel="icon" href="/logo-blanco.webp" type="image/webp" />
-        <link rel="apple-touch-icon" href="/logo-blanco.webp" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
 
         {/* iOS PWA */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -35,9 +35,9 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Especialistas en daños y perjuicios, sucesiones, amparos de salud, derecho laboral, accidentes de trabajo, enfermedades profesionales y ciudadanías argentinas."
         />
-        <meta property="og:image" content="/logo-blanco.webp" />
+        <meta property="og:image" content="/apple-icon.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tudominio.com" />
+        <meta property="og:url" content="https://zucco.vercel.app/" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="Especialistas en daños y perjuicios, sucesiones, amparos de salud, derecho laboral, accidentes de trabajo, enfermedades profesionales y ciudadanías argentinas."
         />
-        <meta name="twitter:image" content="/logo-blanco.webp" />
+        <meta name="twitter:image" content="/apple-icon.png" />
       </head>
 
       <body>
