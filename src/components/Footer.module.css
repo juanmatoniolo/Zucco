@@ -1,0 +1,42 @@
+.footer {
+    background-color: #609162;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+}
+
+.logo {
+    width: 2em;
+    margin-right: 10px;
+}
+
+.brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.socialLink {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+    color: #cfe8d1;
+    /* verde más claro en hover */
+}
+
+@media (max-width: 576px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand {
+        font-size: 1rem;
+    }
+
+    .socialLink {
+        font-size: 1.8rem;
+    }
+}
