@@ -14,7 +14,7 @@ export default function HomePage() {
       {/* Banner con texto superpuesto */}
       <div className={styles.bannerWrapper}>
         <img
-          src="/abogados6.jpg"
+          src="/abogados5.png"
           alt="Banner Estudio Jurídico Juan Cruz Zucco"
           className={styles.bannerImg}
         />
