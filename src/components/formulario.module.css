@@ -1,0 +1,78 @@
+.contactSection {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2e6b3c;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2e6b3c;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #609162;
+    outline: none;
+    box-shadow: 0 0 6px rgba(96, 145, 98, 0.4);
+}
+
+.submitBtn {
+    background-color: #609162;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #2e6b3c;
+}
+
+.submitBtn:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+.successMsg {
+    margin-top: 1.5rem;
+    color: #2e6b3c;
+    font-weight: 600;
+}
