@@ -60,13 +60,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/clientes" className={`nav-link ${styles.navLinkCustom}`}>
+              <Link href="#clientes" className={`nav-link ${styles.navLinkCustom}`}>
                 Clientes
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                href="/contacto"
+                href="#contacto"
                 className={`nav-link btn ms-3 ${styles.contactBtn}`}
               >
                 Contacto

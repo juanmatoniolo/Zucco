@@ -74,11 +74,12 @@
     padding: 2rem;
     color: #fff;
     text-align: center;
-    height: 40vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
 .cta h3 {

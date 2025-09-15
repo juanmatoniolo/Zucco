@@ -75,8 +75,8 @@ export default function Resenias() {
 
     return (
         <section className={styles.reviewsSection}>
-            <div className="container">
-                <div className={styles.reviewsHeader}>
+            <div className="container" id='clientes'>
+                <div className={styles.reviewsHeader} >
                     <h2>Estudio Jurídico Juan Cruz Zucco</h2>
                     <div className={styles.reviewsHeaderStars}>
                         <StarsRow value={avgRating} size={20} />

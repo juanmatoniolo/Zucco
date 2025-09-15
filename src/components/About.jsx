@@ -18,7 +18,7 @@ export default function About() {
 
       <section className="row mt-5" id="about">
         <div className="col-lg-6 mb-4 text-center text-lg-start">
-          <h1 className={styles.mainTitle}>Juan Cruz Zucco</h1>
+          <h1 className={styles.mainTitle} >Juan Cruz Zucco</h1>
           <p className={`mt-3 ${styles.description}`}>
             El <strong>Estudio Jurídico</strong> está liderado por el abogado <strong>Juan Cruz Zucco</strong>, joven profesional de Chajarí, egresado de la Universidad de Buenos Aires (UBA). Cuenta con matrícula activa en:
           </p>
@@ -39,7 +39,10 @@ export default function About() {
             className={styles.profileImage}
           />
         </div>
-        <h2 className='text-center' id='servicios'>¿A qué nos dedicamos ?</h2>
+     <h2 className={"text-center pb-4 " + styles.mainTitle} id="servicios">
+  ¿A qué nos dedicamos?
+</h2>
+
         {[{
           title: 'Derecho Laboral',
           text: 'Defensa en despidos injustificados, reclamos por accidentes de trabajo y enfermedades profesionales. Atención personalizada en Chajarí y toda Entre Ríos.'

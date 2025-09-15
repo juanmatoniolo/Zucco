@@ -91,6 +91,11 @@ export default function Footer() {
                 © {new Date().getFullYear()} Estudio Jurídico Juan C. Zucco. Todos los
                 derechos reservados.
             </div>
+            <hr />
+            <div className="text-center mt-3 small">
+                Creado por <a href="https://wa.me/+5493412275598" target="_blank" className={styles.juanma}> JuanmaToniolo
+                </a>
+            </div>
         </footer>
     );
 }

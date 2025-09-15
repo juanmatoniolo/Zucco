@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import styles from '../page.module.css';
 
 export default function AdminPage() {
     const [user, setUser] = useState(null);
@@ -71,8 +72,8 @@ export default function AdminPage() {
     // 🔹 Si no está logueado → mostrar login
     if (!user) {
         return (
-            <div className="container my-5">
-                <div className="row justify-content-center">
+            <div className={`container-fluid d-flex align-items-center justify-content-center $`}>
+                <div className="row justify-content-center w-100">
                     <div className="col-md-6">
                         <div className="card shadow-lg p-4 border-0 rounded-3">
                             <h2 className="text-center text-success fw-bold mb-3">
@@ -117,9 +118,9 @@ export default function AdminPage() {
         );
     }
 
-    // 🔹 Si está logueado → mostrar mensajes
     return (
-        <div className="container my-5">
+        <div className={`container my-5 ${styles.fondoPantalla}`}>
+
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h2 className="text-success fw-bold">📩 Mensajes recibidos</h2>
                 <button onClick={handleLogout} className="btn btn-outline-danger">
