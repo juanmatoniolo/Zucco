@@ -50,12 +50,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/nosotros" className={`nav-link ${styles.navLinkCustom}`}>
+              <Link href="#about" className={`nav-link ${styles.navLinkCustom}`}>
                 Nosotros
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/servicios" className={`nav-link ${styles.navLinkCustom}`}>
+              <Link href="#servicios" className={`nav-link ${styles.navLinkCustom}`}>
                 Servicios
               </Link>
             </li>

@@ -72,9 +72,13 @@
 .cta {
     background-color: #609162;
     padding: 2rem;
-    border-radius: 12px;
     color: #fff;
     text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta h3 {
@@ -91,7 +95,7 @@
 .whatsBtn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     background-color: #25d366;
     color: #fff;
     padding: 12px 20px;
@@ -99,6 +103,9 @@
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    justify-content: center;
+    min-width: 12em;
+
 }
 
 .whatsBtn:hover {
@@ -106,6 +113,6 @@
 }
 
 .whatsIcon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
