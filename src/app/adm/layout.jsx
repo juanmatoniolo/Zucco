@@ -1,12 +1,50 @@
+
 export const metadata = {
-    title: "Panel Admin | Estudio Jurídico",
-    description: "Zona privada para administración de mensajes",
+    title: "Estudio Jurídico",
+    description: "Juan CruzZucco",
+    themeColor: "#609162",
+    manifest: "/manifest.json",
 };
 
 export default function AdminLayout({ children }) {
     return (
-        <html lang="es">
+        <html lang="es-AR">
+            <head>
+                {/* PWA estándar */}
+                <meta name="theme-color" content="#609162" />
+                <link rel="manifest" href="/manifest.json" />
+
+                {/* Favicon / íconos */}
+                <link rel="icon" href="/logo-blanco.webp" type="image/webp" />
+                <link rel="apple-touch-icon" href="/apple-icon.png" />
+
+                {/* iOS PWA */}
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-title" content="Estudio Jurídico Zucco" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+                {/* Open Graph para compartir en redes */}
+                <meta property="og:title" content="Estudio Jurídico Zucco" />
+                <meta
+                    property="og:description"
+                    content="Especialistas en daños y perjuicios, sucesiones, amparos de salud, derecho laboral, accidentes de trabajo, enfermedades profesionales y ciudadanías argentinas."
+                />
+                <meta property="og:image" content="/apple-icon.png" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://zucco.vercel.app/" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Estudio Jurídico Zucco" />
+                <meta
+                    name="twitter:description"
+                    content="Especialistas en daños y perjuicios, sucesiones, amparos de salud, derecho laboral, accidentes de trabajo, enfermedades profesionales y ciudadanías argentinas."
+                />
+                <meta name="twitter:image" content="/apple-icon.png" />
+            </head>
+
             <body>
+                <BootstrapClient />
                 <div className="bg-light min-vh-100 p-4">
                     {children}
                 </div>

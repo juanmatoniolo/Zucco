@@ -1,4 +1,5 @@
-import { initializeApp } from "firebase/app";
+// lib/firebase.js
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
@@ -11,8 +12,8 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Inicializamos Firebase
-const app = initializeApp(firebaseConfig);
+// Evitar inicializar dos veces en dev/hot-reload
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
-// Exportamos la instancia de Realtime Database
 export const db = getDatabase(app);
+export default app;
