@@ -7,6 +7,8 @@ import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Resenias from "@/components/Clientes";
 import Contacto from "@/components/Formulario";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,6 +21,7 @@ export default function HomePage() {
   return (
     <>
 
+      <Navbar />
 
       <Header />
       <About />
@@ -26,6 +29,7 @@ export default function HomePage() {
       <Contact />
       <br />
       <Contacto />
+      <Footer />
 
     </>
   );

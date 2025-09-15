@@ -52,9 +52,9 @@ export default function RootLayout({ children }) {
 
       <body>
         <BootstrapClient />
-        <Navbar />
+
         {children}
-        <Footer />
+
       </body>
     </html>
   );
