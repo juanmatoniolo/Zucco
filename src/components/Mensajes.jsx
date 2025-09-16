@@ -1,31 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { db } from '@/lib/firebase';
-import { ref, onValue } from 'firebase/database';
-
-export default function Mensajes({ onLogout }) {
-    const [mensajes, setMensajes] = useState([]);
-
-    useEffect(() => {
-        const contactosRef = ref(db, 'contactos');
-        const unsubscribe = onValue(contactosRef, (snapshot) => {
-            if (snapshot.exists()) {
-                const data = snapshot.val();
-                const lista = Object.entries(data).map(([id, val]) => ({
-                    id,
-                    ...val,
-                }));
-                setMensajes(lista.reverse());
-            } else {
-                setMensajes([]);
-            }
-        });
-        return () => unsubscribe();
-    }, []);
-
+export default function Mensajes({ mensajes, onMarkRead, onDelete, onLogout }) {
     return (
-        <section className="container my-5">
+        <div>
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h2>📩 Mensajes Recibidos</h2>
                 <button className="btn btn-outline-danger" onClick={onLogout}>
@@ -33,23 +10,44 @@ export default function Mensajes({ onLogout }) {
                 </button>
             </div>
 
-            {mensajes.length === 0 ? (
-                <p>No hay mensajes todavía.</p>
-            ) : (
-                <div className="list-group">
-                    {mensajes.map((msg) => (
-                        <div key={msg.id} className="list-group-item">
-                            <h5 className="mb-1">{msg.nombre}</h5>
-                            <p className="mb-1">{msg.mensaje}</p>
-                            <small>
-                                <strong>Email:</strong> {msg.email} |{' '}
-                                <strong>Tel:</strong> {msg.telefono} |{' '}
-                                <strong>Fecha:</strong> {new Date(msg.fecha).toLocaleString()}
-                            </small>
-                        </div>
-                    ))}
-                </div>
+            {mensajes.length === 0 && (
+                <div className="alert alert-info">No hay mensajes todavía.</div>
             )}
-        </section>
+
+            <div className="list-group">
+                {mensajes.map((msg) => (
+                    <div
+                        key={msg.id}
+                        className="list-group-item list-group-item-action mb-3 rounded shadow-sm"
+                    >
+                        <h5>{msg.nombre}</h5>
+                        <p>{msg.mensaje}</p>
+                        <small className="text-muted">
+                            📧 {msg.email} | 📱 {msg.telefono} <br />
+                            🗓️ {new Date(msg.fecha).toLocaleString()}
+                        </small>
+
+                        <div className="d-flex gap-2 mt-2">
+                            {msg.leido === 0 && (
+                                <button
+                                    className="btn btn-sm btn-outline-success"
+                                    onClick={() => onMarkRead(msg.id)}
+                                >
+                                    ✅ Marcar como leído
+                                </button>
+                            )}
+                            {msg.leido === 1 && (
+                                <button
+                                    className="btn btn-sm btn-outline-danger"
+                                    onClick={() => onDelete(msg.id)}
+                                >
+                                    🗑 Eliminar
+                                </button>
+                            )}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 }

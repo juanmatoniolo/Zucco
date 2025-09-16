@@ -10,17 +10,8 @@ export const metadata = {
 
 export default function AdminLayout({ children }) {
     return (
-        <>
-
-            <body>
-                <div className="adminLayout">
-
-                    <div className="content">
-                        {children}
-                    </div>
-                </div>
-
-            </body>
-        </>
+        <div className="adminLayout">
+            <div className="content">{children}</div>
+        </div>
     );
 }

@@ -9,6 +9,7 @@ import Resenias from "@/components/Clientes";
 import Contacto from "@/components/Formulario";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,9 +21,7 @@ const montserrat = Montserrat({
 export default function HomePage() {
   return (
     <>
-
       <Navbar />
-
       <Header />
       <About />
       <Resenias />
@@ -30,7 +29,7 @@ export default function HomePage() {
       <br />
       <Contacto />
       <Footer />
-
+      <Analytics/>
     </>
   );
 }

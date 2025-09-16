@@ -42,6 +42,7 @@ export default function Formulario() {
                     body: JSON.stringify({
                         ...formData,
                         fecha: new Date().toISOString(),
+                        leido: 0, // 🔹 Guardamos como no leído
                     }),
                 }
             );
@@ -76,9 +77,7 @@ export default function Formulario() {
                         <form onSubmit={handleSubmit}>
                             {/* Nombre */}
                             <div className="mb-3">
-                                <label htmlFor="nombre" className="form-label fw-semibold">
-                                    Nombre
-                                </label>
+                                <label htmlFor="nombre" className="form-label fw-semibold">Nombre</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -92,9 +91,7 @@ export default function Formulario() {
 
                             {/* Email */}
                             <div className="mb-3">
-                                <label htmlFor="email" className="form-label fw-semibold">
-                                    Email
-                                </label>
+                                <label htmlFor="email" className="form-label fw-semibold">Email</label>
                                 <input
                                     type="email"
                                     className="form-control"
@@ -108,9 +105,7 @@ export default function Formulario() {
 
                             {/* Teléfono */}
                             <div className="mb-3">
-                                <label htmlFor="telefono" className="form-label fw-semibold">
-                                    Teléfono / WhatsApp
-                                </label>
+                                <label htmlFor="telefono" className="form-label fw-semibold">Teléfono / WhatsApp</label>
                                 <input
                                     type="tel"
                                     className="form-control"
@@ -125,9 +120,7 @@ export default function Formulario() {
 
                             {/* Mensaje */}
                             <div className="mb-3">
-                                <label htmlFor="mensaje" className="form-label fw-semibold">
-                                    Mensaje
-                                </label>
+                                <label htmlFor="mensaje" className="form-label fw-semibold">Mensaje</label>
                                 <textarea
                                     className="form-control"
                                     id="mensaje"
