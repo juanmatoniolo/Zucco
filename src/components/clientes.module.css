@@ -1,86 +1,69 @@
 .reviewsSection {
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     padding: 3rem 1rem;
-    position: relative;
-    overflow: hidden;
 }
 
 .reviewsHeader {
     text-align: center;
     margin-bottom: 2rem;
-    animation: fadeInDown 0.8s ease both;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #2e6b3c;
 }
 
 .reviewsHeader h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #2e6b3c;
+    color: #202124;
     margin: 0;
-
 }
 
 .reviewsHeaderStars {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     margin-top: 0.5rem;
 }
 
 .count {
     margin-left: 8px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #555;
 }
 
 .writeBtn {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     border: 1px solid #609162;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 0.9rem;
     color: #609162;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .writeBtn:hover {
-    background-color: #609162;
-    color: #ffffff;
-    transform: scale(1.05);
+    background: #609162;
+    color: #fff;
 }
 
 .reviewCard {
-    background-color: #ffffff;
+    background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 1.25rem;
-    min-height: 240px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
+    transition: 0.2s ease;
 }
 
 .reviewCard:hover {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    transform: translateY(-6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .reviewHeader {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 12px;
+    display: flex;
     align-items: center;
+    gap: 12px;
     margin-bottom: 0.75rem;
 }
 
@@ -88,27 +71,26 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #609162;
-    color: #ffffff;
+    background: #609162;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
 }
 
-.avatar:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(96, 145, 98, 0.5);
+.info {
+    flex: 1;
 }
 
-.info .name {
+.name {
     font-weight: 600;
     margin: 0;
-    color: #2e6b3c;
+    color: #202124;
 }
 
-.info .date {
+.date {
     font-size: 0.8rem;
     color: #6b7280;
     margin: 0;
@@ -121,81 +103,59 @@
 }
 
 .starsRow {
-    display: inline-flex;
-    gap: 4px;
-    margin-bottom: 8px;
-}
-
-.star {
-    vertical-align: middle;
-    transition: transform 0.2s ease;
-}
-
-.star:hover {
-    transform: scale(1.2);
+    display: flex;
+    gap: 2px;
+    margin-top: 2px;
 }
 
 .starGold {
-    color: #fbbf24 !important;
+    color: #fbbc04;
 }
 
 .starEmpty {
-    color: #cdd6e5;
+    color: #dadce0;
 }
 
 .text {
     font-size: 0.95rem;
-    color: #374151;
+    color: #3c4043;
     line-height: 1.5;
+    margin-top: 0.5rem;
 }
 
 .swiper-pagination-bullet {
     background: #609162 !important;
     opacity: 0.6;
-    transition: transform 0.2s ease;
 }
 
 .swiper-pagination-bullet-active {
     background: #2e6b3c !important;
     opacity: 1;
-    transform: scale(1.2);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
     color: #609162 !important;
-    transition: transform 0.2s ease, color 0.3s ease;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    color: #2e6b3c !important;
-    transform: scale(1.2);
+.avatarLink {
+    text-decoration: none;
 }
 
-/* Animaciones */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive */
-@media (min-width: 768px) {
-    .reviewsHeader h2 {
-        font-size: 1.75rem;
-    }
+.avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

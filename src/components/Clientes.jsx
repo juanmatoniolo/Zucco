@@ -21,8 +21,6 @@ const reviews = [
 ];
 
 const totalReviews = 37;
-
-
 const avgRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
 
 function StarsRow({ value = 5, size = 16 }) {
@@ -57,7 +55,7 @@ export default function Resenias() {
             ratingValue: avgRating.toFixed(1),
             bestRating: '5',
             worstRating: '1',
-            reviewCount: reviews.length,
+            reviewCount: totalReviews,
         },
         review: reviews.map((r) => ({
             '@type': 'Review',
@@ -75,8 +73,8 @@ export default function Resenias() {
 
     return (
         <section className={styles.reviewsSection}>
-            <div className="container" id='clientes'>
-                <div className={styles.reviewsHeader} >
+            <div className="container" id="clientes">
+                <div className={styles.reviewsHeader}>
                     <h2>Estudio Jurídico Juan Cruz Zucco</h2>
                     <div className={styles.reviewsHeaderStars}>
                         <StarsRow value={avgRating} size={20} />
@@ -111,14 +109,34 @@ export default function Resenias() {
                         <SwiperSlide key={idx}>
                             <div className={styles.reviewCard}>
                                 <div className={styles.reviewHeader}>
-                                    <div className={styles.avatar}>{r.name.charAt(0)}</div>
+                                    <a
+                                        href="https://www.google.com/maps/contrib/1234567890/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.avatarLink}
+                                    >
+                                        <div
+                                            className={styles.avatar}
+                                            style={{
+                                                backgroundColor: `hsl(${(idx * 47) % 360}, 70%, 50%)`,
+                                            }}
+                                        >
+                                            {r.name.charAt(0)}
+                                        </div>
+                                    </a>
                                     <div className={styles.info}>
-                                        <p className="name">{r.name}</p>
-                                        <p className="date">{r.date}</p>
+                                        <p className={styles.name}>{r.name}</p>
+                                        <p className={styles.date}>
+                                            {new Date(r.date).toLocaleDateString('es-AR', {
+                                                year: 'numeric',
+                                                month: 'long',
+                                                day: 'numeric',
+                                            })}
+                                        </p>
+                                        <StarsRow value={r.rating} size={16} />
                                     </div>
                                     <span className={styles.badge}>Google</span>
                                 </div>
-                                <StarsRow value={r.rating} size={16} />
                                 <p className={styles.text}>{r.review}</p>
                             </div>
                         </SwiperSlide>
@@ -126,7 +144,7 @@ export default function Resenias() {
                 </Swiper>
             </div>
 
-            {/* JSON-LD para SEO (Rich Snippets) */}
+            {/* JSON-LD SEO */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

@@ -18,7 +18,7 @@ export default function About() {
 
       <section className="row mt-5" id="about">
         <div className="col-lg-6 mb-4 text-center text-lg-start">
-          <h1 className={styles.mainTitle} >Juan Cruz Zucco</h1>
+          <h1 className={styles.mainTitle} >Bienvenido</h1>
           <p className={`mt-3 ${styles.description}`}>
             El <strong>Estudio Jurídico</strong> está liderado por el abogado <strong>Juan Cruz Zucco</strong>, joven profesional de Chajarí, egresado de la Universidad de Buenos Aires (UBA). Cuenta con matrícula activa en:
           </p>
